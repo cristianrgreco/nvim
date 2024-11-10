@@ -1,7 +1,7 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    go = { "goimports", "gofmt" },
+    go = { "goimports", "gofmt", "golines" },
     java = { "google-java-format" },
     css = { "prettier" },
     html = { "prettier" },
