@@ -5,6 +5,7 @@ local options = {
     java = { "google-java-format" },
     css = { "prettier" },
     html = { "prettier" },
+    terraform = { "terraform_fmt" },
     javascript = { "prettier" },
     javascriptreact = { "prettier" },
     typescript = { "prettier" },
