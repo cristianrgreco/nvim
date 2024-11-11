@@ -13,6 +13,8 @@ return {
           -- renderer = { type = "command", opts = { cmd = { "/Users/cristian/Desktop/imgcat.sh" } } },
           name = "plantuml_text",
           renderer = { type = "buffer" },
+          -- name = "plantuml_svg",
+          -- renderer = { type = "command", opts = { cmd = { "open", "-a", "Preview" } } },
         },
       },
     },
