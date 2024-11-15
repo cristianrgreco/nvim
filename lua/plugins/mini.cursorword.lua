@@ -1,6 +1,6 @@
 return {
   "echasnovski/mini.cursorword",
   version = false,
-  lazy = false,
+  event = "BufEnter",
   opts = {},
 }

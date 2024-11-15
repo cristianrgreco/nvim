@@ -1,6 +1,6 @@
 return {
   "nvim-java/nvim-java",
-  lazy = false,
+  ft = { "java" },
   dependencies = {
     {
       "williamboman/mason.nvim",
