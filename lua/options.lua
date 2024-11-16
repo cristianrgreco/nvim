@@ -1,17 +1,16 @@
 require "nvchad.options"
 
--- add yours here!
-
 local o = vim.o
--- o.colorcolumn = "120"
+
 o.scrolloff = 999
 o.relativenumber = true
+o.autoread = true
+-- o.colorcolumn = "120"
 -- o.cursorlineopt ='both' -- to enable cursorline!
 
--- Unlick the system clipboard
--- vim.schedule(function()
---   vim.opt.clipboard = ""
--- end)
+vim.schedule(function()
+  vim.opt.clipboard = ""
+end)
 
 vim.cmd [[
   augroup highlight_yank

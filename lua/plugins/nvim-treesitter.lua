@@ -10,5 +10,11 @@ return {
       "html",
       "css",
     },
+    auto_install = true,
   },
+  init = function()
+    vim.filetype.add {
+      pattern = { [".*%.plist"] = "xml" },
+    }
+  end,
 }
