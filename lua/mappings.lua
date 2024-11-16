@@ -1,14 +1,21 @@
 require "nvchad.mappings"
 
--- add yours here
-
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
+map("n", "<leader><leader>", ":Telescope find_files<CR>", { desc = "Find files" })
 map("n", "<leader>fk", ":Telescope keymaps<CR>", { desc = "Find keymap" })
+
+map("n", "ss", ":vsplit<CR>", { desc = "Split window vertically" })
+map("n", "sv", ":split<CR>", { desc = "Split window horizontally" })
+
+-- map("n", "<C-H>", "<C-W><")
+-- map("n", "<C-L>", "<C-W>>")
+-- map("n", "<C-K>", "<C-W>-")
+-- map("n", "<C-J>", "<C-W>+")
 
 map("n", "<leader>tn", function()
   require("neotest").run.run()
