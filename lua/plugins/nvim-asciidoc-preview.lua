@@ -1,6 +1,6 @@
 return {
   "tigion/nvim-asciidoc-preview",
-  ft = { "asciidoc" },
+  cmd = "AsciiDocPreview",
   build = "cd server && npm install",
   opts = {},
 }
